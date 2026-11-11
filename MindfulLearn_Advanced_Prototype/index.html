@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f6f7ff" />
+  <title>MindfulLearn — Learn at your own pace</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="MindfulLearn home"><span class="brand-mark">m</span><span>mindful<span class="brand-light">learn</span></span></a>
+      <div class="side-label">YOUR SPACE</div>
+      <nav class="side-nav">
+        <button class="nav-item active" data-page="home"><span>⌂</span> Overview</button>
+        <button class="nav-item" data-page="learn"><span>▤</span> My learning</button>
+        <button class="nav-item" data-page="progress"><span>◷</span> Progress</button>
+        <button class="nav-item" data-page="rewards"><span>✧</span> My rewards</button>
+      </nav>
+      <div class="side-note"><div class="note-icon">☁</div><b>Your pace is valid.</b><p>Rest is part of learning. You can always continue when you're ready.</p></div>
+      <button class="profile-mini" data-page="profile"><div class="avatar">IS</div><span><b>Isam Student</b><small>Curious learner</small></span><span class="dots">···</span></button>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark">m</span> mindfullearn</div>
+        <div class="breadcrumb">Your space <span>/</span> <b id="crumb">Overview</b></div>
+        <div class="top-actions"><span class="calm-status"><i></i> Calm mode on</span><button class="icon-btn" id="helpBtn" aria-label="Help">?</button><div class="avatar small">IS</div></div>
+      </header>
+
+      <section class="page active" id="home">
+        <div class="welcome-row"><div><p class="eyebrow">TUESDAY, NOVEMBER 11</p><h1>A little progress<br class="mobile-break"/> goes a long way, Isam.</h1><p class="subhead">What would feel like a good learning session today?</p></div><div class="welcome-art"><div class="sun">☀</div><div class="art-book">▱</div><span class="spark s1">✦</span><span class="spark s2">✧</span></div></div>
+        <div class="hero-card">
+          <div class="hero-copy"><span class="pill light">YOUR WEEKLY INTENTION</span><h2>Learn steadily.<br/>Live fully.</h2><p>You chose a goal of 4 focused sessions this week. You're making space for learning and life.</p><button class="btn white" data-page="learn">Continue learning <span>→</span></button></div>
+          <div class="weekly-ring"><div class="ring"><div><strong id="weekCount">2/4</strong><small>sessions</small></div></div><span>Weekly progress</span></div>
+          <div class="hero-decoration">✦</div>
+        </div>
+        <div class="section-heading"><div><p class="eyebrow">A GENTLE CHECK-IN</p><h2>How are you feeling today?</h2></div><span class="muted">No right or wrong answer</span></div>
+        <div class="mood-grid">
+          <button class="mood-card" data-mood="Focused"><span>◎</span><b>Focused</b><small>Ready to learn</small></button>
+          <button class="mood-card" data-mood="Okay"><span>☁</span><b>Okay</b><small>One step at a time</small></button>
+          <button class="mood-card" data-mood="Low energy"><span>☾</span><b>Low energy</b><small>Keep it light</small></button>
+          <button class="mood-card" data-mood="Need a break"><span>♧</span><b>Need a break</b><small>Rest is productive</small></button>
+        </div>
+        <div class="dashboard-grid">
+          <div class="panel continue-panel"><div class="panel-head"><div><p class="eyebrow">PICK UP WHERE YOU LEFT OFF</p><h3>Continue your learning</h3></div><span class="tag">12 min lesson</span></div><div class="course-row"><div class="course-icon purple">✎</div><div class="course-info"><b>Design thinking basics</b><small>Module 2 · Understanding users</small><div class="progress-line"><i style="width:58%"></i></div></div><b class="percent">58%</b></div><button class="text-btn" data-page="learn">Open my learning <span>→</span></button></div>
+          <div class="panel insight-panel"><p class="eyebrow">A HEALTHY HABIT</p><div class="insight-icon">♧</div><h3>Balance looks good on you.</h3><p>You've completed 2 focused sessions and taken time away from the screen. That's a healthy rhythm.</p><button class="text-btn" data-page="progress">See my insights →</button></div>
+        </div>
+        <div class="footer-ethics"><span>✧</span> No streaks to lose. No pressure to return. Your learning belongs to you.</div>
+      </section>
+
+      <section class="page" id="learn">
+        <div class="page-title"><p class="eyebrow">YOUR LEARNING LIBRARY</p><h1>Explore at your pace.</h1><p class="subhead">Choose a topic that interests you. Every small step counts.</p></div>
+        <div class="filter-row"><button class="filter active">All topics</button><button class="filter">In progress</button><button class="filter">Completed</button><div class="search-box">⌕ <input id="courseSearch" placeholder="Search courses"/></div></div>
+        <div class="course-grid" id="courseGrid">
+          <article class="course-card"><div class="course-cover cover-lilac"><span>✳</span><small>CREATIVE THINKING</small></div><div class="course-body"><span class="tag">IN PROGRESS</span><h3>Design thinking basics</h3><p>Understand people, explore ideas and build useful solutions.</p><div class="course-meta"><span>◷ 35 min</span><span>5 lessons</span></div><button class="btn primary full" data-course="Design thinking basics">Continue course →</button></div></article>
+          <article class="course-card"><div class="course-cover cover-peach"><span>⌘</span><small>TECHNOLOGY</small></div><div class="course-body"><span class="tag green-tag">READY TO START</span><h3>Introduction to AI</h3><p>Learn what AI is and how it can support everyday life.</p><div class="course-meta"><span>◷ 25 min</span><span>4 lessons</span></div><button class="btn primary full" data-course="Introduction to AI">Start learning →</button></div></article>
+          <article class="course-card"><div class="course-cover cover-mint"><span>♡</span><small>WELL-BEING</small></div><div class="course-body"><span class="tag green-tag">READY TO START</span><h3>Digital well-being</h3><p>Build a thoughtful and balanced relationship with technology.</p><div class="course-meta"><span>◷ 20 min</span><span>3 lessons</span></div><button class="btn primary full" data-course="Digital well-being">Start learning →</button></div></article>
+        </div>
+      </section>
+
+      <section class="page" id="session">
+        <div class="session-wrap"><button class="back-link" data-page="learn">← Back to learning</button><div class="session-card"><span class="pill">FOCUSED LEARNING</span><div class="session-symbol">✦</div><p class="eyebrow">DESIGN THINKING BASICS · LESSON 2</p><h1 id="sessionTitle">Understand the people you're designing for</h1><p class="session-description">Good design begins with empathy. Take a moment to understand people's needs, experiences and challenges before jumping to solutions.</p><div class="lesson-points"><div><span>01</span><p><b>Observe</b><small>Notice what people do, not only what they say.</small></p></div><div><span>02</span><p><b>Listen</b><small>Ask open questions and give people time to explain.</small></p></div><div><span>03</span><p><b>Reflect</b><small>Write down one need or challenge you discovered.</small></p></div></div><div class="session-actions"><button class="btn secondary" id="pauseBtn">Pause session</button><button class="btn primary" id="completeBtn">Mark lesson complete ✓</button></div><p class="session-foot">You are in control. You can pause or leave whenever you like.</p></div></div>
+      </section>
+
+      <section class="page" id="progress">
+        <div class="page-title"><p class="eyebrow">YOUR PERSONAL JOURNEY</p><h1>Progress, without pressure.</h1><p class="subhead">A picture of your learning habits — not a score of your worth.</p></div>
+        <div class="stats-grid"><div class="stat-card"><span class="stat-icon lavender">◷</span><strong>2.4 hrs</strong><small>Focused learning this week</small><em>↑ 20% from last week</em></div><div class="stat-card"><span class="stat-icon mint">✓</span><strong>2 sessions</strong><small>Completed this week</small><em>You're building a rhythm</em></div><div class="stat-card"><span class="stat-icon peach">♡</span><strong>3 breaks</strong><small>Healthy breaks taken</small><em>Rest supports learning</em></div></div>
+        <div class="dashboard-grid progress-panels"><div class="panel"><div class="panel-head"><div><p class="eyebrow">WEEKLY ACTIVITY</p><h3>Your learning rhythm</h3></div><span class="tag">This week</span></div><div class="bar-chart"><div><i style="height:45%"></i><small>Mon</small></div><div><i style="height:72%"></i><small>Tue</small></div><div><i style="height:28%"></i><small>Wed</small></div><div><i style="height:58%"></i><small>Thu</small></div><div><i style="height:18%"></i><small>Fri</small></div><div><i style="height:0%"></i><small>Sat</small></div><div><i style="height:0%"></i><small>Sun</small></div></div><p class="chart-note">Your week doesn't need to look the same every day.</p></div><div class="panel health-panel"><p class="eyebrow">HEALTHY USE CHECK</p><h3>Learning with balance</h3><div class="health-score"><div class="health-circle">Good<br/><b>balance</b></div><p>Based on your goals, breaks and reflection — not how long you stay online.</p></div><ul class="check-list"><li>✓ Sessions have a clear goal</li><li>✓ Breaks are part of your routine</li><li>✓ You can stop whenever you want</li></ul></div></div>
+        <div class="privacy-note"><span>♧</span><div><b>Your data, your choice.</b><p>These insights are private and designed to help you reflect. They are not used to rank you against other students.</p></div></div>
+      </section>
+
+      <section class="page" id="rewards">
+        <div class="page-title"><p class="eyebrow">SMALL WINS, MEANINGFUL REWARDS</p><h1>Celebrate what you learn.</h1><p class="subhead">Rewards recognise effort and curiosity. They never disappear when you take a break.</p></div>
+        <div class="points-banner"><div><span class="pill light">YOUR LEARNING POINTS</span><h2>240 <small>pts</small></h2><p>Earned through lessons, reflection and helpful learning choices.</p></div><div class="trophy">✧</div></div>
+        <div class="section-heading"><div><p class="eyebrow">YOUR COLLECTION</p><h2>Meaningful milestones</h2></div></div>
+        <div class="badge-grid"><div class="badge-card"><div class="badge-art gold">✦</div><b>Curious mind</b><small>Completed your first lesson</small><span class="earned">EARNED</span></div><div class="badge-card"><div class="badge-art blue">♧</div><b>Mindful pause</b><small>Made space for a healthy break</small><span class="earned">EARNED</span></div><div class="badge-card locked"><div class="badge-art violet">✎</div><b>Thoughtful learner</b><small>Write 3 learning reflections</small><span>1 OF 3 REFLECTIONS</span></div><div class="badge-card locked"><div class="badge-art coral">♡</div><b>Knowledge builder</b><small>Complete 5 learning modules</small><span>2 OF 5 MODULES</span></div></div>
+        <div class="ethics-banner"><span>♡</span><div><b>Rewards are encouragement, never obligation.</b><p>There are no countdowns, loot boxes, expiring points or penalties for taking time off.</p></div></div>
+      </section>
+
+      <section class="page" id="profile">
+        <div class="page-title"><p class="eyebrow">YOUR ACCOUNT</p><h1>Your learning, your rules.</h1><p class="subhead">Personalise your experience and choose how the app supports you.</p></div>
+        <div class="profile-layout"><div class="panel profile-card"><div class="avatar big">IS</div><h2>Isam Student</h2><p>Curious learner · Joined November 2026</p><button class="btn secondary">Edit profile</button></div><div class="panel settings-panel"><p class="eyebrow">LEARNING PREFERENCES</p><h3>Gentle support settings</h3><div class="setting-row"><div><b>Quiet reminders</b><small>Only send reminders you choose.</small></div><label class="switch"><input type="checkbox" checked/><span></span></label></div><div class="setting-row"><div><b>Weekly reflection</b><small>A private check-in about your learning.</small></div><label class="switch"><input type="checkbox" checked/><span></span></label></div><div class="setting-row"><div><b>Break suggestions</b><small>Suggest a pause after focused learning.</small></div><label class="switch"><input type="checkbox" checked/><span></span></label></div><div class="setting-row"><div><b>Leaderboard visibility</b><small>Keep learning personal, not competitive.</small></div><label class="switch"><input type="checkbox"/><span></span></label></div><button class="btn primary" id="saveSettings">Save preferences</button></div></div>
+      </section>
+
+      <nav class="mobile-nav"><button class="active" data-page="home"><span>⌂</span>Home</button><button data-page="learn"><span>▤</span>Learn</button><button data-page="progress"><span>◷</span>Progress</button><button data-page="rewards"><span>✧</span>Rewards</button><button data-page="profile"><span>○</span>Profile</button></nav>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop" id="modal"><div class="modal"><button class="modal-close" id="closeModal">×</button><div class="modal-symbol">☁</div><h2 id="modalTitle">A gentle reminder</h2><p id="modalText">Your learning journey is yours. You can pause, rest and return whenever it works for you.</p><button class="btn primary full" id="modalOkay">Sounds good</button></div></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
